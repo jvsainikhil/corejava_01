@@ -12,5 +12,8 @@ public class binarlyLiteral {
 		double num= 12e10;
 		System.out.println(num); // power of or large numbers
 		
+		char c='a';
+		c++;
+		System.out.println(c); // can do an incrementation to char
 	}
 }
