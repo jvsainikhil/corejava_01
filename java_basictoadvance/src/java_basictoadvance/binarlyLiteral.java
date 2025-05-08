@@ -8,5 +8,12 @@ public class binarlyLiteral {
 		
 		System.out.println("\n 64|32|16|8|4|2|1");
 		//------------------------------> 1|0|1 -->5
+		
+		double num= 12e10;
+		System.out.println(num);
+		
+		char c='a';
+		c++;
+		System.out.println(c);
 	}
 }
