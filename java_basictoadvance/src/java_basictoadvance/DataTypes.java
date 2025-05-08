@@ -2,7 +2,7 @@ package java_basictoadvance;
 
 import java.util.ArrayList;
 
-public class datatypes {
+public class DataTypes {
 	static int num=9;
 	static byte b=127;
 	short sh=558;
@@ -16,16 +16,16 @@ public class datatypes {
 	 public static void main(String[] args) {
 		    //creating new object which converts as bean 
 		 // Create object to access instance variables
-	        datatypes obj = new datatypes(); 
+	        DataTypes obj = new DataTypes(); 
 	        
 
 	        //with integer
 	        ArrayList<Integer> b = new ArrayList<>();
-	        b.add(datatypes.num);
+	        b.add(DataTypes.num);
 	        
 	        //with string
 	        ArrayList<String> a = new ArrayList<>();
-	        a.add("b=" + datatypes.b);
+	        a.add("b=" + DataTypes.b);
 	        a.add("sh=" + obj.sh);
 	        a.add("l=" + obj.l);
 	        a.add("f=" + obj.f);

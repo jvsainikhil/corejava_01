@@ -1,6 +1,6 @@
 package java_basictoadvance;
 
-public class helloworld {
+public class HelloWorld {
 	public static void main(String args[]) {
 		int num1=3;
 		int num2=4;
@@ -10,5 +10,6 @@ public class helloworld {
 		//another class
 		float a=5.4f;
 		System.out.println(a);
+		System.out.println("hello world - 0");
 	}
 }
