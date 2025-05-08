@@ -10,10 +10,7 @@ public class binarlyLiteral {
 		//------------------------------> 1|0|1 -->5
 		
 		double num= 12e10;
-		System.out.println(num);
+		System.out.println(num); // power of or large numbers
 		
-		char c='a';
-		c++;
-		System.out.println(c);
 	}
 }
