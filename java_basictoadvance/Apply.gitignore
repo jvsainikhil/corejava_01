@@ -17,4 +17,4 @@ out/
 # Environment configs (optional if used)
 *.env
 application*.properties
-application*.yml
+*.yml

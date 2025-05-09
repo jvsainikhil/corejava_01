@@ -29,5 +29,6 @@ public class WhyNotToPushClassFiles {
 				+ " \n❌ You Should NOT Push .class Files to Git: .class files are build artifacts, not source code. "
 				+ "\nIncluding them in your repo: Clutters the repository, Causes unnecessary merge conflicts, Increases repo size.");
 		System.out.println("checking .class");
+		System.out.println("checking .class");
 	}
 }
