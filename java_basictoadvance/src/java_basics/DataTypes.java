@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basics;
 
 import java.util.ArrayList;
 

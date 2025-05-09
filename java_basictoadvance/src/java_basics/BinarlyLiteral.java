@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basics;
 
 public class BinarlyLiteral {
 	public static void main(String []args) {

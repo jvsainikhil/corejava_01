@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basics_operators;
 
 public class ShortHandOperator {
 	public static void main(String []ards) {
