@@ -1,0 +1,20 @@
+# Ignore class files
+*.class
+
+# Ignore build directory (for Eclipse/Java projects)
+bin/
+out/
+
+# Eclipse-specific files
+.classpath
+.project
+.settings/
+
+# Logs and system files
+*.log
+*.DS_Store
+
+# Environment configs (optional if used)
+*.env
+application*.properties
+*.yml
