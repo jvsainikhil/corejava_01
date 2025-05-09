@@ -37,5 +37,43 @@ public class RelationalOperator {
 		} else {
 			System.out.println("Not eligible to drive");
 		}
+		
+		int sample1 =10;
+		int sample2 =10;
+		if (sample1<=sample2 && sample2>=sample1) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
