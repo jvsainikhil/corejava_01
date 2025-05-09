@@ -1,6 +1,6 @@
 package java_basictoadvance;
 
-public class typecasting {
+public class TypeCasting {
 	public static void main(String []args) {
 		byte ty1=127;
 		int end1 = ty1;
