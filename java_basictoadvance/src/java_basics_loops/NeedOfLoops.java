@@ -6,7 +6,8 @@ public class NeedOfLoops {
 		// to print multiple time
 		// loop - while, do while, for
 		int a=9;
-		System.out.println("hi\n".repeat(a));
+		//System.out.println("hi\n".repeat(a));
+		System.out.println("hi\n"+a);
 	}
 
 }
