@@ -21,7 +21,7 @@ public class Array {
 	        }
 
 	        System.out.println("\nReversed Order:");
-	        for (int i = nums.length - 1; i >= 0; i--) {
+	        for (int i = /*nums.length*/4 - 1; i >= 0; i--) {
 	            System.out.print(nums[i] + " ");
 	        }
 //	        for (initialization; condition; update) {

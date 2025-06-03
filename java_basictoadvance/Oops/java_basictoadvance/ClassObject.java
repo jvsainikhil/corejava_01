@@ -9,6 +9,11 @@ class adf{
 		//System.out.println("Sum of a and b is: " + c);
 		return c;
 	}
+	public int add(int i, int j) {
+		// TODO Auto-generated method stub
+		int r=i+j;
+		return r;
+	}
 }
 
 class Nikhil {
@@ -25,13 +30,15 @@ public class ClassObject {
 		// Call the method using the object
 		a.sayHello();
 		adf obj = new adf();
-	    int result = obj.abc();
-	    System.out.println("Sum of a and b is: " + result);
+		//int result = obj.abc();
+		int sum = obj.add(1,2);
+		System.out.println("Sum of a and b is: " + "result" +""+sum);
 	}
+
 }
 
 //---------------------------------------------------------------------------------------
-//Class is a blueprint for creating objects
+// Class is a blueprint for creating objects
 // Object is an instance of a class
 // Class defines the properties and behavior of an object
 // Object is created from a class
@@ -42,7 +49,7 @@ public class ClassObject {
 // Class is a collection of objects
 // Object is a collection of data and methods
 //---------------------------------------------------------------------------------------
-//JVM will create objects in java
+// JVM will create objects in java
 // JVM creates an object of the class when we create an instance of the class
 // JVM allocates memory for the object
 // JVM initializes the object by calling the constructor of the class

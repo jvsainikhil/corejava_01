@@ -5,7 +5,6 @@ class Calculator {
     int add(int a) {
         return a + 20;
     }
-
     // Overloaded method with two parameters
     int add(int a, int b) {
         return a + b;
