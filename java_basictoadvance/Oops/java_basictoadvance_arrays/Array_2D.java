@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basictoadvance_arrays;
 
 public class Array_2D {
 	public static void main(String[] args) {
@@ -32,5 +32,20 @@ public class Array_2D {
 			}
 			System.out.println();
 		}
+		
+		System.out.println("\n");
+		
+		int size = 4; // 4x4 matrix
+        int[][] square = new int[size][size];
+        
+        int count = 1;
+        System.out.println("Sequential Square 2D Array:");
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                square[i][j] = count++;
+                System.out.print(square[i][j] + "\t");
+            }
+            System.out.println();
+        }
 	}
 }

@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basictoadvance_arrays;
 
 public class Array {
 	 public static void main(String[] args) {
