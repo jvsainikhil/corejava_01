@@ -1,9 +1,9 @@
 package java_basictoadvance;
 
-class MathUtils {
+class Calculator {
     // Method with one parameter
     int add(int a) {
-        return a + 10;
+        return a + 20;
     }
 
     // Overloaded method with two parameters
@@ -19,10 +19,11 @@ class MathUtils {
 
 public class Overloaded {
     public static void main(String[] args) {
-        MathUtils utils = new MathUtils();
+        Calculator utils = new Calculator();
         
         System.out.println(utils.add(5));         // Output: 15
-        System.out.println(utils.add(5));
+        System.out.println(utils.add(5,10));
+        System.out.println(utils.add(5.4,10.3));
     }
 }
 
