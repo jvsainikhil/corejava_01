@@ -11,28 +11,33 @@ class Mobile {
 
 	public void show() {
 		System.out.println("brand=" + brand + ",\t price=" + price + ",\t name=" + name); 
+	//In non static methods we can use static variables 
 	}
 }
-public class Demo{
+public class StaicKeyWord{
 	public static void main(String[] args) {
 		Mobile obj1=new Mobile();
 		obj1.brand = "Apple";
 		obj1.price= 1500;
-		obj1.name= "Smartphone";// effect all obj
+		Mobile.name= "Smartphone";// effect all obj 
 		
 		Mobile obj0=new Mobile();
 		obj0.brand = "Samsung";
 		obj0.price= 1700;
-		obj0.name= "SmartPhone";// effect all obj
+		Mobile.name= "SmartPhone";// effect all obj
 		
 		Mobile obj2=new Mobile();
 		obj2.brand = "nokia";
 		obj2.price= 100;
-		obj2.name= "SmartPhone";// effect all obj
+		Mobile.name= "SmartPhone";// effect all obj
 		
-		obj1.name ="phone";// effect all obj
+		Mobile.name ="phone";// effect all obj 
+		//ERROR The static field Mobile.name should be accessed in a static way
+		//SO WE need to change obj --> class name "Mobile"
+		//There is a separate area created in your JVM which will have all the static variables
 		obj1.show();
 		obj2.show();
 		obj0.show();
 		}
 }// static is a shared memory
+// static method should call with the class name itself
