@@ -25,7 +25,7 @@ public class AndOrNotIfElseRelationalOperator{
 		boolean s = false;
 
 		System.out.println("a && b: " + (w && s)); // false
-		System.out.println("a || b: " + (w || s)); // true
+		System.out.println("a || b: " + (w | s)); // true
 		System.out.println("!a: " + (!w));         // false
 
 		// Real-world example
