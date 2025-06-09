@@ -1,6 +1,6 @@
 package java_basictoadvance;
 
-//we are targeting to call class with out an object 
+//--> we are targeting to call class with out an object <--
 class MobilePhone {
     String brand;        // Instance variable
     int price;           // Instance variable
@@ -29,7 +29,10 @@ public class ClassClassfile {
 
     public static void main(String[] args) throws ClassNotFoundException {
         // Calling static block using reflection
+    	// This will load the class and execute static blocks
         Class.forName("java_basictoadvance.MobilePhone");
+        // This will load the class WITHOUT initializing (static block WON'T execute)
+        Class.forName("java_basictoadvance.MobilePhone", false, ClassLoader.getSystemClassLoader());
     }
 }
 
