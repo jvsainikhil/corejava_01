@@ -7,7 +7,7 @@ class MobileNewBlock{
 
     static { //static block will call only once
     	name ="phone";
-    	System.out.println("static block will call only once");
+    	System.out.println("static block will call only once...");
     }
     
     // Non-static method (instance method)
