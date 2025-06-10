@@ -10,9 +10,9 @@ class Human{
 	public int getAge() {
 		return age;
 	}
-	public void setAge(int age,Human a) {// local and instance is same 
+	public void setAge(int age) {// local and instance is same 
 		//Human obj1=a;
-		a.age = age;// assigning value to it self 
+		this.age = age;// assigning value to it self 
 	}
 	public String getName() {
 		return name;
@@ -25,7 +25,7 @@ class Human{
 public class Encapsulation {
 	public static void main (String [] args) {
 		Human a= new Human();
-		a.setAge(25,a);// passing the object 2-times 
+		a.setAge(25);// passing the object 2-times 
 		// by default it will give you as this
 		a.setName("Nikhil");
 		System.out.println(a.getAge()+a.getName());
