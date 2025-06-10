@@ -1,30 +1,30 @@
 package java_basictoadvance_4pillors;
 
 //By using getters and setters get and set, Encapsulation
+//This from source --> getters and setters shortcut
 class Human{
 	private int age; // Accessible only in the same class
 	private String name;
 	
-	public int xyz() {// it should define the intension
+	public int getAge() {
 		return age;
 	}
-	public void abc(int b) {// it should define the intension
-		 age = b;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	
 	public String getName() {
 		return name;
 	}
-	public void setName(String c) {
-		name=c;
+	public void setName(String name) {
+		this.name = name;
 	}
 }
 
 public class Encapsulation {
 	public static void main (String [] args) {
 		Human a= new Human();
-		a.abc(25);// it should define the intension
+		a.setAge(25);
 		a.setName("Nikhil");
-		System.out.println(a.xyz()/* it should define the intension*/+a.getName());
+		System.out.println(a.getAge()+a.getName());
 	}
 }
