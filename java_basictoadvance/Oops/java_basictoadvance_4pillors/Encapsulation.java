@@ -11,8 +11,8 @@ class Human{
 		return age;
 	}
 	public void setAge(int age,Human a) {// local and instance is same 
-		Human obj1=a;
-		obj1.age = age;// assigning value to it self 
+		//Human obj1=a;
+		a.age = age;// assigning value to it self 
 	}
 	public String getName() {
 		return name;
