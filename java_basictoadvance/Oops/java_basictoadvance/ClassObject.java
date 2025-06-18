@@ -10,7 +10,6 @@ class adf{
 		return c;
 	}
 	public int add(int i, int j) {
-		// TODO Auto-generated method stub
 		int r=i+j;
 		return r;
 	}

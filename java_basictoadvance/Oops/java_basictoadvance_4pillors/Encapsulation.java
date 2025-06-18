@@ -6,7 +6,7 @@ package java_basictoadvance_4pillors;
 class Human{
 	private int age; // Accessible only in the same class
 	private String name;
-	
+
 	public int getAge() {
 		return age;
 	}
@@ -24,11 +24,14 @@ class Human{
 
 public class Encapsulation {
 	public static void main (String [] args) {
-		Human a= new Human();
-		a.setAge(25);// passing the object 2-times 
+		Human a= new Human(); 
+		// if we want to assign the value when the object is created
+		/*		a.setAge(25);// passing the object 2-times 
 		// by default it will give you as this
 		a.setName("Nikhil");
+		 */
 		System.out.println(a.getAge()+a.getName());
 		//output: 0Nikhil
 	}
 }
+

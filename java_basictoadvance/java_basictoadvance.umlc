@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlmark-class version="0.8.1" icons="true" image-type="JPEG" show-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-rel="true" router="FAN">  
+  <class id="1" language="java" name="java_basics_loops.NeedOfLoops" project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_loops/NeedOfLoops.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="123" x="29" y="181"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="java_basics_loops.ForLoop" project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_loops/ForLoop.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="114" x="370" y="174"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="java_basics_loops.SwitchStatement" project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_loops/SwitchStatement.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="143" x="231" y="322"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="java_basics_operators.AndOrNotIfElseRelationalOperator" 
+    project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_operators/AndOrNotIfElseRelationalOperator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="337" y="507"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="java_basics_operators.PrePostArithmeticOperatorsExample" 
+    project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_operators/PrePostArithmeticOperatorsExample.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="657" y="318"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="java_basics_operators.TernaryOperator" project="java_basictoadvance" 
+    file="/java_basictoadvance/src/java_basics_operators/TernaryOperator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="142" x="170" y="70"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <classifier-attribute resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" 
+    sort="true" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="false"/>    
+    <operations public="true" package="true" protected="true" private="true" static="false"/>  
+  </classifier-attribute>  
+  <association-attribute labels="true" multiplicity="true"/>
+</umlmark-class>
