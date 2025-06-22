@@ -11,11 +11,31 @@ class A{
 }
 public class Inheritance {
 	public static void main(String[] args) {
-		int marks;
-		marks = 100;
-		
-		A obj; // reference 
-		obj= new A(); // create the object 
-		obj.show();
+		new A();// This is anonymous object
+		// we have created an object 
+		/* int marks; marks = 100;
+		 * 
+		 * A obj; // reference obj= new A(); 
+		 * // create the object obj.show();
+		 */
+		new A().show();
+		/*
+		 * is a default constructor 
+		 * in A show
+		 */
+		new A().show();	
+		/*
+		 * is a default constructor 
+		 * in A show
+		 */
+		//-------------------------------------
+		/*
+		 * output: 
+		 * is a default constructor 
+		 * is a default constructor 
+		 * in A show is a
+		 * default constructor in A show
+		 */
+
 	}
 }
