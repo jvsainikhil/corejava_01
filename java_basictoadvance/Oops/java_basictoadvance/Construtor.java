@@ -10,7 +10,7 @@ class Human {
 		//we can assign the values 
 		//System.out.println("in constructor");
 		age =12;
-		name ="nikhil";
+		name ="nikhil";// we can write the data base connection inside the constructor
 	}
 	
 	public int getAge() {
