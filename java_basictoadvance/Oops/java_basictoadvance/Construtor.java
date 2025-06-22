@@ -8,7 +8,9 @@ class Human {
 	//same name as a class name --> never return any thing 
 	public Human() {
 		//we can assign the values 
-		System.out.println("in constructor");
+		//System.out.println("in constructor");
+		age =12;
+		name ="nikhil";
 	}
 	
 	public int getAge() {
@@ -28,9 +30,14 @@ public class Construtor {
 	public static void main(String[] args) {
 		Human a= new Human();// this line itself
 		Human b= new Human();// this will call a constructor
-		System.out.println(a.getAge()+a.getName());// this is taking a default values 
-		a.setAge(20);
-		a.setName("nikhil");
+		System.out.println(a.getName()+" : "+a.getAge());// this is taking a default values 
+		System.out.println(b.getName()+" : "+b.getAge());
+		//a.setAge(20);
+		//a.setName("nikhil");
 		//System.out.println(a.getAge()+a.getName()+a.getClass());
 	}
+	/* output:
+	 * in constructor in constructor 0null
+	 */
+
 }
