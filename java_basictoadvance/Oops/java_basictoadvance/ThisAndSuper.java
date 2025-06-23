@@ -5,7 +5,7 @@ class A{//super class
 		super();//default //In every constructor this method will be there 
 		System.out.println("in A");
 	}
-	A(int a){ //---> if we want to call this 02
+	A(int a){ //---> if we want to call this 02 //---->04
 		super();//default //In every constructor this method will be there 
 		System.out.println("in A int: " + a);
 	}
@@ -13,7 +13,7 @@ class A{//super class
 
 class B extends A{
 	B(){
-		super();//---->03 
+		super(9);//---->03 //---->04
 		//default //In every constructor this method will be there 
 		System.out.println("in B");
 	}
@@ -28,7 +28,13 @@ class B extends A{
 public class ThisAndSuper {
 	public static void main(String[] args) {
 		//B obj = new B();
-		B obj1= new B();//---03
+		B obj1= new B();//--->03 //--->04
+		
+		/*---->04
+		 * This is the output: 
+		 * in A 
+		 * int: 9 in B
+		 */
 		
 		/*---->03
 		 * This is the output: 
