@@ -16,6 +16,7 @@ class AdvCal extends Cal {
 public class OverRidingExample {
 	public static void main(String[] args) {
 		AdvCal obj = new AdvCal();
-		System.out.println("Result: "+obj.add(1,9));
+		Cal obj1=new Cal();
+		System.out.println("Result: "+obj.add(1,9)+"\nAnother with out Overriding: "+obj1.add(29, 12));
 	}
 }
