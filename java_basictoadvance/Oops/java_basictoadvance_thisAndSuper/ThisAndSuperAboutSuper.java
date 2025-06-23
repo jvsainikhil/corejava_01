@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basictoadvance_thisAndSuper;
 // every class in java it will extend object 
 class A extends Object{//super class
 	A(){//---------------> this is executing 01 //-->03
@@ -25,7 +25,7 @@ class B extends A{
 	}
 }
 
-public class ThisAndSuper {
+public class ThisAndSuperAboutSuper {
 	public static void main(String[] args) {
 		//B obj = new B();
 		B obj1= new B();//--->03 //--->04
