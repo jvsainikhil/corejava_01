@@ -30,9 +30,9 @@ public class Inheritance { // General way
     int r1 =obj.add(4,5); // error
     int r2 =obj.sub(4,5); // error 
     System.out.println(r1+", "+r2);
-//    int r3 =obj2.div(4,5);
-//    int r4 =obj2.multi(4,5);
-//    System.out.println(r3+", "+r4);
-//		
+    int r3 =obj.div(4,5);
+    int r4 =obj.multi(4,5);
+    System.out.println(r3+", "+r4);
+		
 	}
 }
