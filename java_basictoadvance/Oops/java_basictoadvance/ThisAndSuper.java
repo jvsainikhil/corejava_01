@@ -1,7 +1,7 @@
 package java_basictoadvance;
 
 class A{//super class
-	A(){//---------------> this is executing 01
+	A(){//---------------> this is executing 01 //-->03
 		super();//default //In every constructor this method will be there 
 		System.out.println("in A");
 	}
@@ -13,7 +13,8 @@ class A{//super class
 
 class B extends A{
 	B(){
-		super();//default //In every constructor this method will be there 
+		super();//---->03 
+		//default //In every constructor this method will be there 
 		System.out.println("in B");
 	}
 	B(int b){//---------------> for this one 01
@@ -27,7 +28,15 @@ class B extends A{
 public class ThisAndSuper {
 	public static void main(String[] args) {
 		//B obj = new B();
-		B obj1= new B(5);
+		B obj1= new B();//---03
+		
+		/*---->03
+		 * This is the output: 
+		 * in A
+		 * in B
+		 * 
+		 */
+		
 		/*---->02
 		 * This is the output: 
 		 * in A int: 5 
