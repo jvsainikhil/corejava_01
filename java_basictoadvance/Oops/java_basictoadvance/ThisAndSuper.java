@@ -1,7 +1,7 @@
 package java_basictoadvance;
 
 class A{//super class
-	A(){
+	A(){//---------------> this is executing 
 		super();//default //In every constructor this method will be there 
 		System.out.println("in A");
 	}
@@ -16,7 +16,7 @@ class B extends A{
 		super();//default //In every constructor this method will be there 
 		System.out.println("in B");
 	}
-	B(int b){
+	B(int b){//--------------- for this one 
 		//call the constructor of a /*super class*/ the default one 
 		super();//default //In every constructor this method will be there 
 		System.out.println("in B int: " + b);
@@ -29,9 +29,10 @@ public class ThisAndSuper {
 		//B obj = new B();
 		B obj1= new B(5);
 		/*
-		 * output: 
+		 * This is the output: 
 		 * in A 
 		 * in B int: 5
+		 * 
 		 * 
 		 */
 	}
