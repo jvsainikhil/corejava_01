@@ -12,7 +12,7 @@ class Calculator{
 }
 
 //file_03
-class AdvanceCalculator{
+class AdvanceCalculator extends Calculator{
 	public int multi(int n1,int n2) {
 		return n1*n2;
 	}
