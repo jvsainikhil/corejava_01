@@ -1,4 +1,5 @@
 package java_basictoadvance_4pillors;
+//Malti Level Inheritance
 //file_01
 class Calculator{//Parent class
 	public int add(int n1,int n2) {
