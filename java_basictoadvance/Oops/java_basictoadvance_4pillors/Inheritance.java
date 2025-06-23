@@ -20,11 +20,13 @@ public class Inheritance {
 		 */
 		new A().show();
 		/*
+		 * output: 
 		 * is a default constructor 
 		 * in A show
 		 */
 		new A().show();	
-		/*
+		/* 
+		 * output: 
 		 * is a default constructor 
 		 * in A show
 		 */
