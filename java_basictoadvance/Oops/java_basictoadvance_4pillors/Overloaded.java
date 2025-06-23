@@ -1,6 +1,6 @@
-package java_basictoadvance;
+package java_basictoadvance_4pillors;
 
-class Calculator {
+class CalculatorA {
     // Method with one parameter
     int add(int a) {
         return a + 20;
@@ -23,7 +23,7 @@ class Calculator {
 
 public class Overloaded {
     public static void main(String[] args) {
-        Calculator utils = new Calculator();
+        CalculatorA utils = new CalculatorA();
         
         System.out.println(utils.add(5));         // Output: 15
         System.out.println(utils.add(5,10));
