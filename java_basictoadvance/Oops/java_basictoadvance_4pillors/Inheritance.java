@@ -25,14 +25,14 @@ class AdvanceCal{
 //file_02
 public class Inheritance { // General way 
 	public static void main(String[] args) {
-    Cal obj=new Cal();
-    int r1 =obj.add(4,5);
-    int r2 =obj.sub(4,5);
-    AdvanceCal obj2=new AdvanceCal();
-    int r3 =obj2.div(4,5);
-    int r4 =obj2.multi(4,5);
+    AdvanceCal obj=new AdvanceCal();
+    //Cal obj=new Cal();
+    int r1 =obj.add(4,5); // error
+    int r2 =obj.sub(4,5); // error 
     System.out.println(r1+", "+r2);
-    System.out.println(r3+", "+r4);
-		
+//    int r3 =obj2.div(4,5);
+//    int r4 =obj2.multi(4,5);
+//    System.out.println(r3+", "+r4);
+//		
 	}
 }
