@@ -1,30 +1,21 @@
 package java_basictoadvance_4pillors;
 
-class z {
-	public void show() { //method
-		System.out.println("in Z show");
-	}
-	public void config() {
-		System.out.println("in Z Config");
+class Cal {
+	public int add(int a, int b) { // method
+		return a+b;
 	}
 }
 
-class x extends z{
+class AdvCal extends Cal {
 	@Override
-	public void show() {
-		System.out.println("in X show");
-	}
-	
-	@Override
-	public void config() {
-		System.out.println("in X config");
+	public int add(int a, int b) { // method
+		return a+b+90;
 	}
 }
 
 public class OverRidingExample {
 	public static void main(String[] args) {
-		x obj = new x();
-		obj.show();
-		obj.config();
+		AdvCal obj = new AdvCal();
+		System.out.println("Result: "+obj.add(1,9));
 	}
 }
