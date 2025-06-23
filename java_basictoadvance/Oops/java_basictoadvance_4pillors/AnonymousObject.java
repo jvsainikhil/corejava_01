@@ -9,7 +9,7 @@ class A{
 		System.out.println("in A show");
 	}
 }
-public class Inheritance {
+public class AnonymousObject {
 	public static void main(String[] args) {
 		new A();// This is anonymous object
 		// we have created an object 
