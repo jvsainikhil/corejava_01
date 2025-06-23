@@ -1,6 +1,6 @@
 package java_basictoadvance;
-
-class A{//super class
+// every class in java it will extend object 
+class A extends Object{//super class
 	A(){//---------------> this is executing 01 //-->03
 		super();//default //In every constructor this method will be there 
 		System.out.println("in A");
