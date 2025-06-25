@@ -19,13 +19,15 @@ final class MyClass {
 }
 */
 final class calc {
-	public void show() {
+	public final void show() {
 
 	}
 }
 
-class advancecalc extends Calc {// we will gwt error due to final
+class advancecalc extends calc {// we will gwt error due to final
+	public void show() {
 
+	}
 }
 
 public class FinalKeyWord {
