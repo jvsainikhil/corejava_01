@@ -15,5 +15,10 @@ public class WrapperClass {
 		 */
 		int num2 = num1.intValue(); //autounboxing the primitive value 
 		System.out.println(num2);
+	
+		//Integer provides this 
+		String str = "12";
+		int num3= Integer.parseInt(str);
+		System.out.println(num3*2);
 	}
 }
