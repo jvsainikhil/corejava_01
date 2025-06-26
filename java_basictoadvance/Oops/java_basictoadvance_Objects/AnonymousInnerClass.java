@@ -14,13 +14,13 @@ class Aa {
 
 public class AnonymousInnerClass {
 	public static void main(String[] args) {
-			Aa obj = new Aa()//if this is "using only" once then
-			{  
-				@Override
-	            void show() {
-	                System.out.println("in new Bb");
-	            }
-	        };
-		obj.show();
+		Aa obj = new Aa()// if this is "using only once" then
+		{ // with out creating a new class
+			@Override
+			void show() {
+				System.out.println("in new Bb");
+			}
+		};
+		obj.show(); // calls the override one
 	}
 }
