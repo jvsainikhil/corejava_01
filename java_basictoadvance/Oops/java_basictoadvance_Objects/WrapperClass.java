@@ -4,7 +4,8 @@ public class WrapperClass {
 	public static void main(String[] args) {
 		
 		int num = 7;//primitive
-		Integer num1 = new Integer(num);// boxing  we are taking int //reference variable 
+		//Integer num1 = new Integer(num);// boxing  we are taking int //reference variable 
+		Integer num1 = num; //AutoBoxking - this will convert to object so we call as AutoBoxking
 		/* it is saying we have a better alternative 
 		 * Multiple markers at this line 
 		 * - The constructor Integer(int) has been
