@@ -13,6 +13,7 @@ public class WrapperClass {
 		 * - The value of the local
 		 * variable num1 is not used
 		 */
-		System.out.println(num);
+		int num2 = num1.intValue(); //autounboxing the primitive value 
+		System.out.println(num2);
 	}
 }
