@@ -4,6 +4,9 @@ class DifferentLaptop {
 	 String model;
 	 int price;
 
+	 public String toString() {
+	return "Hey"+ model+price;
+		 }
 }
 
 public class InheritanceObjectClass {
@@ -11,6 +14,8 @@ public class InheritanceObjectClass {
 		DifferentLaptop obj = new DifferentLaptop();
 		obj.model = "Lenova" ;
 		obj.price = 10000;
-		System.out.println(obj);
+		System.out.println(obj.toString()); // default it will take
+		//output:java_basictoadvance_4pillors.DifferentLaptop@6be46e8f
+
 	}
 }
