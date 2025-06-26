@@ -18,20 +18,22 @@ final class MyClass {
  // class content
 }
 */
-final class calc {
-	public final void show() {
 
-	}
-}
 
-class advancecalc extends calc {// we will gwt error due to final
-	public void show() {
-
-	}
-}
-
-public class FinalKeyWord {
-	public static void main(String[] args) {
-
-	}
-}
+//final class calc {
+//	public final void show() {
+//
+//	}
+//}
+//
+//class advancecalc extends calc {// we will gwt error due to final
+//	public void show() {
+//
+//	}
+//}
+//
+//public class FinalKeyWord {
+//	public static void main(String[] args) {
+//
+//	}
+//}

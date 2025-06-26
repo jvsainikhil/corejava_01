@@ -22,7 +22,7 @@ abstract class WagonR extends Car{ // every abstract shoud be implemented if you
 //	}
 }
 
-class updatedWagonR extends WagonR{  //concrete class
+class updatedWagonR extends WagonR{  //concrete class onject can be used 
 
 	@Override
 	public void fly() {
