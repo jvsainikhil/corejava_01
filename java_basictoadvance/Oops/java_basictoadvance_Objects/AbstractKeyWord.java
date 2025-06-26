@@ -1,10 +1,10 @@
 package java_basictoadvance_Objects;
 
-class Car{
+abstract class Car{
 //	public void drive() {
 //		//not shure 
 //	}
-	public void drive();
+	public abstract void drive();
 	public void playMusic() {
 		System.out.println("Play music");
 	}
@@ -18,7 +18,8 @@ class WagonR extends Car{
 
 public class AbstractKeyWord {
 	public static void main(String[] args) {
-		 Car obj = new Car();
+		 Car obj = new WagonR(); 
+		 // abstract car cannot create object but we can use reference
 		 obj.drive();
 		 obj.playMusic();
 	}
