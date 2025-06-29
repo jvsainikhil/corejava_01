@@ -12,9 +12,20 @@ class Laptop extends Computer{
 
 //need a laptop
 class Desktop extends Computer{
+
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+		
+	}
+//	public void devApp(Computer lap) {
+//		lap.code();
+//		//System.out.println("coding");
+//	}
+
 	public void devApp(Computer lap) {
-		lap.code();
-		//System.out.println("coding");
+		// TODO Auto-generated method stub
+		
 	}
 }
 
