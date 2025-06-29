@@ -32,7 +32,7 @@ public class InterfacesAndAbstractMethods {
 		obj = new LogicCode();
 		LogicCode obj1 = new LogicCode();
 		obj.config();
-		obj.show();
+		obj.show();   // interface wont have memory in heap
 		System.out.println(Sample.age+" & "+Sample.name);
 	}
 }
