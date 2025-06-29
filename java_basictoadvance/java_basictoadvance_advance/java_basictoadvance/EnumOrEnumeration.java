@@ -9,14 +9,17 @@ enum Status{ //prebuild
 public class EnumOrEnumeration {
 	// send a request --> in waht ways it is accepting the request 200,404...etc
 	public static void main(String[] args) {
-		
-		Status s = Status.Running;
-		Status s1 = Status.Failed;
-		Status s2 = Status.Pending;
-		Status s3 = Status.Success;
-		System.out.println(s);
-		System.out.println(s1);
-		System.out.println(s2);
-		System.out.println(s3);
+		int i=5;
+		 Status[] ss = Status.values();
+		for(Status s: ss) {
+			System.out.println(s+" : "+s.ordinal());
+		}
+		 // System.out.println(s.ordinal());
+		 
+		/*
+		 * Status s = Status.Running; Status s1 = Status.Failed; Status s2 =
+		 * Status.Pending; Status s3 = Status.Success; System.out.println(s);
+		 * System.out.println(s1); System.out.println(s2); System.out.println(s3);
+		 */
 	}
 }
