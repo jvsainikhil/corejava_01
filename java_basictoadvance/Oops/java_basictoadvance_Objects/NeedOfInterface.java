@@ -1,9 +1,7 @@
 package java_basictoadvance_Objects;
 
-class Computer{
-	public void code() {
-		
-	}
+abstract class Computer{
+	public abstract void code();
 }
 
 class Laptop extends Computer{
@@ -24,9 +22,10 @@ class Developer {
 	}
 }
 
+// we are making it loosely coupled
 public class NeedOfInterface {
 	public static void main(String[] args) {
-		Computer lap=new Laptop();
+		Computer lap=new Laptop(); // we are passing a computer reference and accepting the reference
 		Computer desk=new Desktop();
 		Developer nikhil= new Developer();
 		nikhil.devapp(desk); // we passed desk
