@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basictoadvance_rules;
 
 public class CamelCasing {
 	public static void main(String[] args) {
