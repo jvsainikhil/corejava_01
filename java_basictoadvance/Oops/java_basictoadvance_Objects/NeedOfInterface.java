@@ -30,6 +30,7 @@ public class NeedOfInterface {
 		Computer desk=new Desktop(); // interface reference
 		Developer nikhil= new Developer();
 		nikhil.devapp(lap); // we passed desk
+		nikhil.devapp(desk);
 	}
 	/* output: code, compile, run */
 }
