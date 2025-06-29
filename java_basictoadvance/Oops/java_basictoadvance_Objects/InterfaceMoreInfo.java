@@ -5,8 +5,8 @@ package java_basictoadvance_Objects;
 //interface - interface -> extends
 
 interface Aaa { 
-	int age=25;  
-	String name="Nikhil";
+//	int age=25;  
+//	String name="Nikhil";
 	void show();
 	void config();
 }
@@ -19,11 +19,11 @@ interface Y extends X{
 	
 }
 
-class ALogicCode implements Aaa,Y{
+class B implements Aaa,Y{
 
 	@Override
 	public void show() {
-		System.out.println("in the showf");
+		System.out.println("in the show");
 	}
 
 	@Override
@@ -45,11 +45,11 @@ public class InterfaceMoreInfo {
 	public static void main(String[] args) {
 	//	Sample onj=new Sample(); //it is an interface so we cannot 
 		Aaa obj;
-		obj = new ALogicCode();
-		ALogicCode obj1 = new ALogicCode();
+		obj = new B();
 		obj.config();
 		obj.show();   // interface wont have memory in heap
-		System.out.println(Aaa.age+" & "+Aaa.name);
+		X obj1 =new B();
+		obj1.run();
 	}
 }
 
