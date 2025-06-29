@@ -1,8 +1,8 @@
 package java_basictoadvance_Objects;
 
 interface Sample { 
-	int age;   // variables in interface are always "Final and Static"
-	String name;
+	int age=25;   // variables in interface are always "Final and Static"
+	String name="Nikhil";
 	// we can create abstract and nonabstract methods
 	//we can design some thing
 	//we created hyreachy
