@@ -33,5 +33,6 @@ public class InterfacesAndAbstractMethods {
 		LogicCode obj1 = new LogicCode();
 		obj.config();
 		obj.show();
+		System.out.println(Sample.age+" & "+Sample.name);
 	}
 }
