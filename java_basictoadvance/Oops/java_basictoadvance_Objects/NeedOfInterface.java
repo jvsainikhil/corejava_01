@@ -1,15 +1,18 @@
 package java_basictoadvance_Objects;
 
+abstract class Computer{
+	public abstract void code();
+}
 
-class nikhilsLaptop{
+class Laptop extends Computer{
 	public void code() {
 		System.out.println("code, compile, run");
 	}
 }
 
 //need a laptop
-class Developer{
-	public void devApp(nikhilsLaptop lap) {
+class Desktop extends Computer{
+	public void devApp(Computer lap) {
 		lap.code();
 		//System.out.println("coding");
 	}
@@ -17,9 +20,10 @@ class Developer{
 
 public class NeedOfInterface {
 	public static void main(String[] args) {
-		nikhilsLaptop a=new nikhilsLaptop(); //calling
-		Developer nikhil=new Developer();
-		nikhil.devApp(a); //calling 
+		Computer lap =new Laptop();
+		Laptop desk=new Laptop(); //calling // tight coupling
+		Desktop nikhil=new Desktop();
+		nikhil.devApp(lap); //calling // tight coupling
 	}
 	/* output: code, compile, run */
 }
