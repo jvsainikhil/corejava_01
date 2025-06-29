@@ -1,4 +1,4 @@
-package java_basictoadvance_AccessModifiers;
+package java_basictoadvance.java_basictoadvance_AccessModifiers;
 
 public class AccessModifiers {
 	public static void main(String[] args) {
