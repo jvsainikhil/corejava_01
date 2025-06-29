@@ -1,6 +1,9 @@
 package java_basictoadvance_Objects;
 
-interface Sample { // we can create abstract and nonabstract methods
+interface Sample { 
+	int age;   // variables in interface are always "Final and Static"
+	String name;
+	// we can create abstract and nonabstract methods
 	//we can design some thing
 	//we created hyreachy
 	/* public abstract By default*/ void show();
