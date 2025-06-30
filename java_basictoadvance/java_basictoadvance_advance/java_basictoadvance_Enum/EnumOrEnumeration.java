@@ -1,4 +1,4 @@
-package java_basictoadvance;
+package java_basictoadvance_Enum;
 
 
 enum Status{ //prebuild
