@@ -6,10 +6,13 @@ enum compareStatus { // prebuild
 	// ordinal---> order
 }
 
+//extends not work in enum but we can create constructors & variables
 public class EnumIfSwitch {
 	public static void main(String[] args) {
 		
 		compareStatus s=compareStatus.Running;
+		
+		System.out.println(s.getClass().getSuperclass());
 		
 		switch(s) {
 		case Running:
