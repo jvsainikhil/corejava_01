@@ -1,16 +1,22 @@
 package java_basictoadvance_Enum;
 
 enum LaptopPurchase { // prebuild
-	Mackbook(2000), Xps(2200), Surface(1500), ThinkPad(1800);
+	Mackbook(2000), Xps(2200), Surface, ThinkPad(1800);
 
 	private int price;
 
 	// Constructor using Fields
 	private LaptopPurchase(int price) {
 		this.price = price;
+		System.out.println("in Laptop"+this.price);
+	}
+	
+	private LaptopPurchase() {
+		price = 500;
 	}
 
 	// ----------------------------------------
+	
 	// Getters and Setters
 	public int getPrice() {
 		return price;
@@ -27,7 +33,7 @@ public class EnumClass {
 		//LaptopPurchase lap = LaptopPurchase.Mackbook;
 	    //System.out.println(lap + " : "+ lap.getPrice());
 		for (LaptopPurchase lap : LaptopPurchase.values()) {
-			System.out.println(lap + " : " + lap.getPrice());
+			//System.out.println(lap + " : " + lap.getPrice());
 		}
 	}
 }
