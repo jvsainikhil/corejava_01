@@ -4,6 +4,7 @@ package java_basictoadvance_Enum;
 enum Status{ //prebuild
 	Running, Failed, Pending, Success; // all this are objects //named constants
    //  0   |    1   |   2   |     3   |
+	//ordinal---> order 
 }
 
 public class EnumOrEnumeration {
@@ -14,7 +15,8 @@ public class EnumOrEnumeration {
 		for(Status s: ss) {
 			System.out.println(s+" : "+s.ordinal());
 		}
-		 // System.out.println(s.ordinal());
+		 
+		// System.out.println(s.ordinal());
 		 
 		/*
 		 * Status s = Status.Running; Status s1 = Status.Failed; Status s2 =
