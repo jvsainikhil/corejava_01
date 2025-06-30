@@ -10,7 +10,6 @@ enum Status{ //prebuild
 public class EnumOrEnumeration {
 	// send a request --> in waht ways it is accepting the request 200,404...etc
 	public static void main(String[] args) {
-		int i=5;
 		 Status[] ss = Status.values();
 		for(Status s: ss) {
 			System.out.println(s+" : "+s.ordinal());
