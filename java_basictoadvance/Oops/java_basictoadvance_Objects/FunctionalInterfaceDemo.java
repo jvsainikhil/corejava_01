@@ -16,10 +16,8 @@ interface use {
 //This is java-8
 public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
-		use obj = new use() {//<----- no ;
-			public void show(int i) {
+		use obj = (int i) ->  {
 				System.out.println("i'm using this");
-			}
 		};//<----- here we need to keep
 		obj.show(5);
 	}
