@@ -18,10 +18,7 @@ public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
 //		use obj = new use() {//<------we know this
 //			public void show() {//<---we know this
-		use obj = () -> 
-			{
-				System.out.println("i'm using this");
-			};
+		use obj = () -> System.out.println("i'm using this");
 		obj.show();
 	}
 }
