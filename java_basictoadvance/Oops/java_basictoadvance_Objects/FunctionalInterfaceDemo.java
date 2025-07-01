@@ -2,7 +2,7 @@ package java_basictoadvance_Objects;
 
 @FunctionalInterface
 interface use {
-	void show();
+	void show(int i);
 }
 //class nikhil implements use --> --------> {
 //
@@ -13,12 +13,14 @@ interface use {
 //	}
 //	
 //} <------------- <------------ <-------- <--
-//This is java-8 --> to reduce the lines --> Lamdaexpression
+//This is java-8
 public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
-//		use obj = new use() {//<------we know this
-//			public void show() {//<---we know this
-		use obj = () -> System.out.println("i'm using this");
-		obj.show();
+		use obj = new use() {//<----- no ;
+			public void show(int i) {
+				System.out.println("i'm using this");
+			}
+		};//<----- here we need to keep
+		obj.show(5);
 	}
 }
