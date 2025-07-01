@@ -13,14 +13,15 @@ interface use {
 //	}
 //	
 //} <------------- <------------ <-------- <--
-
+//This is java-8 --> to reduce the lines --> Lamdaexpression
 public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
-		use obj = new use() {//<----- no ;
-			public void show() {
+//		use obj = new use() {//<------we know this
+//			public void show() {//<---we know this
+		use obj = () -> 
+			{
 				System.out.println("i'm using this");
-			}
-		};//<----- here we need to keep
+			};
 		obj.show();
 	}
 }
