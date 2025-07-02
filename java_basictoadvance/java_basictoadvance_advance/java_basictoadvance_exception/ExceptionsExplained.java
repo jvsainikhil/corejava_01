@@ -1,9 +1,9 @@
 package java_basictoadvance_exception;
-
+//custom exception
 class NikhilException extends Exception
 {
 	public NikhilException(String string) {
-		
+		super(string);
 	}
 }
 
