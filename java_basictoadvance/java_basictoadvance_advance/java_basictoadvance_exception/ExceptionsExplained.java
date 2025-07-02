@@ -8,7 +8,8 @@ public class ExceptionsExplained {
 		try {
 			b = 18 / a;
 		} catch (Exception e) {
-			System.out.println("Something went wromg");
+			//we are printing exception as well
+			System.out.println("Something went wrong: " + e);
 		}
 		System.out.println(b);// before the value is 0 so the output comes as 0
 		System.out.println("bye");
