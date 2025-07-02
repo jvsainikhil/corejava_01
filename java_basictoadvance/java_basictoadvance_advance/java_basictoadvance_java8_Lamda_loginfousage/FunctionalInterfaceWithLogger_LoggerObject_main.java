@@ -1,4 +1,4 @@
-package java_basictoadvance_java8_features;
+package java_basictoadvance_java8_Lamda_loginfousage;
 
 import java.util.logging.Logger;
 
@@ -8,8 +8,8 @@ interface usecaseA {
 }
 
 public class FunctionalInterfaceWithLogger_LoggerObject_main {
-    private static final Logger logger = Logger.getLogger(FunctionalInterfaceWithLogger_LoggerObject_main.class.getName());
-
+    //private static final Logger logger = Logger.getLogger(FunctionalInterfaceWithLogger_LoggerObject_main.class.getName());
+	private static final Logger logger = Logger.getLogger("MyCustomLogger");
     public static void main(String[] args) {
 
         sampleusecase sample = (a, b) -> {

@@ -1,4 +1,4 @@
-package java_basictoadvance_java8_features;
+package java_basictoadvance_java8_Lamda_loginfousage;
 
 @FunctionalInterface
 interface usecase {
