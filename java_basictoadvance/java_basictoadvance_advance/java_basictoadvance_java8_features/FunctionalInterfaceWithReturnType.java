@@ -1,4 +1,4 @@
-package java_basictoadvance_Objects;
+package java_basictoadvance_java8_features;
 
 @FunctionalInterface 
 interface uauser {
