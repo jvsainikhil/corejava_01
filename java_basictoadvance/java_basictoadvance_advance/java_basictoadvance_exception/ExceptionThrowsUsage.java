@@ -15,9 +15,15 @@ public class ExceptionThrowsUsage {
 	static {
 		System.out.println("Class Loaded");
 	}
-	public static void main(String[] args) throws ClassNotFoundException{
+	
+	public static void main(String[] args) {
 		A obj= new A();
-		obj.show();
+		try {
+			obj.show();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		try {
 //			Class.forName("Calc");
 //		} catch (ClassNotFoundException e) {
