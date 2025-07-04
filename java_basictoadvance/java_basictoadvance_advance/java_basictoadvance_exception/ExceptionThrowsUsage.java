@@ -3,7 +3,7 @@ package java_basictoadvance_exception;
 class A {
 	public void show() throws ClassNotFoundException {
 		//try {
-			Class.forName("ExceptionThrowsUsage");
+			Class.forName("A");
 	//	} catch (ClassNotFoundException e) {
 			System.out.println("Not able to find the class");
 	//	}
