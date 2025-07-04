@@ -1,23 +1,29 @@
 package java_basictoadvance_advance_threads;
 
+import java.util.logging.Logger;
+
 class Count{
 	int count;
 	public synchronized void increament() {
 		count++;
+		//System.out.println(Thread.currentThread().getName() + " --> " + count);
+		Logger logger = Logger.getLogger("MyLogger");
+		logger.info(Thread.currentThread().getName() + " count is: " + count);
 	}
 }
 
 public class RaceThreads {
 	public static void main(String[] args) {
+
 		Count c = new Count();
 		Runnable ab = () -> {
-			for (int i = 1; i <= 100; i++) {
+			for (int i = 1; i <= 5; i++) {
 				c.increament();
 			}
 		};
 		
 		Runnable a = () -> {
-			for (int i = 1; i <= 100; i++) {
+			for (int i = 1; i <= 5; i++) {
 				c.increament();
 			}
 		};
@@ -30,13 +36,11 @@ public class RaceThreads {
 		try {
 			t1.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} // Wait for t1 to finish
         try {
 			t2.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} // Wait for t2 to finish
 		
