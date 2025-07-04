@@ -1,10 +1,8 @@
 package java_basictoadvance_advance_threads;
 
 class Z{
-	
 }
-
-class Xx extends Z,Thread{
+class Xx implements Runnable{
 	public void run() {
 		for(int i=1;i<=100;i++ )
 		System.out.println("hi");
@@ -17,7 +15,7 @@ class Xx extends Z,Thread{
 }
 
 
-class Yy extends Thread{
+class Yy implements Runnable{
 	public void run() {
 		for(int i=1;i<=100;i++ )
 		System.out.println("hello");
