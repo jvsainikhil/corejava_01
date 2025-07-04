@@ -3,7 +3,7 @@ package java_basictoadvance_advance_threads;
 // wanted to print parallely 
 class X extends Thread{
 	public void run() {// run threads
-		for(int i=1;i<=10;i++ )
+		for(int i=1;i<=100;i++ )
 		System.out.println("hi");
 	}
 }
@@ -11,7 +11,7 @@ class X extends Thread{
 //wanted to print parallely 
 class Y extends Thread{
 	public void run() { //run threads
-		for(int i=1;i<=10;i++ )
+		for(int i=1;i<=100;i++ )
 		System.out.println("hello");
 	}
 }
