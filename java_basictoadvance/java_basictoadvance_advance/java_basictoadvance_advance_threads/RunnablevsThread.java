@@ -29,8 +29,8 @@ class Yy implements Runnable {
 
 public class RunnablevsThread {
 	public static void main(String[] args) {
-		X ab= new X();
-		Y a= new Y();
+		Runnable ab= new X();
+		Runnable a= new Y();
 		//ab.start();
 		//a.start();
 	    Thread t1 = new Thread(ab);
