@@ -1,12 +1,12 @@
 package java_basictoadvance_collections;
 
-import java.util.Set;
+import java.util.Collection;
 import java.util.TreeSet;
 
 public class SetinJava {
 
 	public static void main(String[] args) {
-		Set<Integer> nums = new TreeSet<Integer>();
+		Collection<Integer> nums = new TreeSet<Integer>();
 		nums.add(1);
 		nums.add(2);
 		nums.add(4);
