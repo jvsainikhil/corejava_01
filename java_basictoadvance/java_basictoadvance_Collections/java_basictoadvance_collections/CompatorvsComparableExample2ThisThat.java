@@ -29,18 +29,10 @@ class Student implements Comparable<Student>{
 	
 }
 
-public class CompatorvsComparableExample2 {
+public class CompatorvsComparableExample2ThisThat {
 	public static void main(String[] args) {
-		Comparator<Student> com = new Comparator<>() {
-			@Override
-			public int compare(Student i, Student j) {
-				if (i.age > j.age)
-					return 1;
-				else
-					return -1;
-			}
-		};
-		
+		//Functional Interface
+		Comparator<Student> com = (i, j) -> i.age>j.age?1:-1;
 		List<Student> studs = new ArrayList<>();
 		studs.add(new Student(21, "Nikhil"));
 		studs.add(new Student(20, "Srikanth"));
