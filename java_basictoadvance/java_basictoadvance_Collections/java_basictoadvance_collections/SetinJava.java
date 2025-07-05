@@ -1,6 +1,7 @@
 package java_basictoadvance_collections;
 
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class SetinJava {
@@ -13,10 +14,16 @@ public class SetinJava {
 		nums.add(3);
 		nums.add(4);
 		nums.add(1);
-//o/p:1 2 3 4  --> no multiple values, we will not have get,
-		//in soreted way we will be getting the values
-		for (int i : nums) {
-			System.out.print(i);
-		}
+		
+		Iterator<Integer> values = nums.iterator();
+		while(values.hasNext())
+		System.out.println(values.next());
+		//nums.iterator(values);
+		//output: 1 2 3 4  
+		//No multiple values, we will not have get,
+		//In soreted way we will be getting the values
+//		for (int i : nums) {
+//			System.out.print(i);
+//		}
 	}
 }
