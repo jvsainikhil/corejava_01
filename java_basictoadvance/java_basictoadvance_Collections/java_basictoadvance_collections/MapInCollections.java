@@ -15,7 +15,6 @@ public class MapInCollections {
 		// will get all the keys 1st process
 		System.out.println(eceSection.keySet()+":"+eceSection.values());
 		// will get all the keys 2nd process
-		System.out.println();
 		
 		for(String studentname:eceSection.keySet()) {
 			System.out.println(studentname+" : "+ eceSection.get(studentname));
