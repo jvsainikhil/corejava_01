@@ -7,6 +7,7 @@ public class Collections {
 
 	public static void main(String[] args) {
 		//Array List is a class which Implements List
+		//Collection is just to fetch values 
 		Collection<Integer> nums = new ArrayList<Integer>();
 		nums.add(10); // object types
 		nums.add(20);
