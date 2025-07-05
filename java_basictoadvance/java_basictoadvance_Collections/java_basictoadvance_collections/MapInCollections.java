@@ -1,6 +1,6 @@
 package java_basictoadvance_collections;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -19,11 +19,9 @@ public class MapInCollections {
 		for(String studentname:eceSection.keySet()) {
 			System.out.println(studentname+" : "+ eceSection.get(studentname));
 		}
-		
-		
 		//keys are set not accepts duplicate
 		//values are list accepts duplicate
-		Map<String,Integer> cseSection= new HashMap<String,Integer>();
+		Map<String,Integer> cseSection= new Hashtable<String,Integer>();
 	//	cseSection.put("king", 1);
 		cseSection.put("king", 1);
 		cseSection.put("queen", 2);
