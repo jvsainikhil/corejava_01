@@ -13,7 +13,7 @@ public class SetinJava {
 		nums.add(3);
 		nums.add(4);
 		nums.add(1);
-
+//o/p:1 2 3 4 1 
 		for (Object i : nums) {
 			System.out.print(i + " ");
 		}
