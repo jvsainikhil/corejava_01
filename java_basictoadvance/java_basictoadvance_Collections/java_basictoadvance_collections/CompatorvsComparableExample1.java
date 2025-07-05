@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class CompatorvsComparable {
+public class CompatorvsComparableExample1 {
 	public static void main(String[] args) {
 
 		// This is for last number this is an interface
@@ -30,11 +30,5 @@ public class CompatorvsComparable {
 		// This is for last number
 		Collections.sort(nums, com);// pass object
 		System.out.println(nums);
-
-		int a = 2, b = 8;
-		System.err.println(a % b);
-		System.err.println(b % a);
-		System.err.println(b / a);
-		System.err.println(a / b);
 	}
 }
