@@ -12,10 +12,8 @@ public class StreamAPICollections2Explain {
 		Predicate<Integer> p=new  Predicate<Integer>() { //--->01
 			
 			public boolean test(Integer n) {
-				if(n%2==0)
-					return false;
-				else
-					return true;
+				return n%2==0;
+					
 			}
 		};
 		
