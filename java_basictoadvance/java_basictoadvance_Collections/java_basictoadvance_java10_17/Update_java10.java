@@ -21,9 +21,9 @@ public class Update_java10 {
 		 * java_basictoadvance_java10_17.Update_java10.main(Update_java10.java:11)
 		 */
 		System.out.println(i + j+"\n"+name);
-		
 		int nums[] = new int[10];
-		
 		var nums1 = new int[10];
+		
+		var obj = new Update_java10();
 	}
 }
