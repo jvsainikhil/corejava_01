@@ -2,33 +2,28 @@ package java_basictoadvance_collections;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 public class StreamAPICollections2 {
 
 	public static void main(String[] args) {
-		List<Integer> nums = Arrays.asList(4, 8, 5, 1);
-		nums.forEach(n->System.err.println(n));
+		List<Integer> nums = Arrays.asList(4, 8, 5, 1);//original values
 		
-		Consumer<Integer> com = n -> System.out.println(n);
-		nums.forEach(com);
-		
-//		for(int  i=0;i<nums.size();i++) {
-//			System.out.println(nums);
-//		}
-		
-//		for(int n:nums) {
-//			System.out.println(n);
-//		}
-		
-//		int sum=0;0
-//		for(int n:nums) {
-//			if(n%2==0) {
-//				n=n*2;
-//				sum=sum+n;
-//			}
-//		}
-//		System.out.println(sum);
-		
+		//once we use it we cannot use it again this is an interface
+		//all operations can be performed here s1
+		Stream<Integer> s1 =nums.stream(); //we will get all the values on s1
+
+		s1.forEach(n->System.out.println(n));
+		s1.forEach(n->System.out.println(n));
+		/*we can use only once
+		output:
+			4
+			8
+			5
+			1
+			Exception in thread "main" java.lang.IllegalStateException: stream has already been operated upon or closed
+				at java.base/java.util.stream.AbstractPipeline.sourceStageSpliterator(AbstractPipeline.java:279)
+				at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+				at java_basictoadvance_collections.StreamAPICollections2.main(StreamAPICollections2.java:17)*/
 	}
 }
