@@ -2,7 +2,7 @@ package java_basictoadvance_java10_17;
 
 // LVIT - Local variable type inference
 //These var is only applicable for local variable
-public class Update_java10 {
+public class Update_java10Var {
 	//var c = 20;// not works
 	/*
 	 * Exception in thread "main" java.lang.Error: Unresolved compilation problem:
@@ -24,6 +24,6 @@ public class Update_java10 {
 		int nums[] = new int[10];
 		var nums1 = new int[10];
 		
-		var obj = new Update_java10();
+		var obj = new Update_java10Var();
 	}
 }
