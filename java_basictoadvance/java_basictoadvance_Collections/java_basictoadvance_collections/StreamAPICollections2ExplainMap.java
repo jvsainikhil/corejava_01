@@ -10,14 +10,8 @@ public class StreamAPICollections2ExplainMap {
 	public static void main(String[] args) {
 		List<Integer> nums = Arrays.asList(4, 8, 5, 1);
 		
-		Function<Integer, Integer> fun= new Function<Integer, Integer>() {
-			
-			public Integer apply(Integer n) {
+		Function<Integer, Integer> fun=  n -> n * 2;
 				
-				return n*2;
-			}
-		};
-		
 		int result = nums.stream()
 				.filter(n -> n % 2 == 0) 
 				.map(fun/* n -> n * 2 */)
