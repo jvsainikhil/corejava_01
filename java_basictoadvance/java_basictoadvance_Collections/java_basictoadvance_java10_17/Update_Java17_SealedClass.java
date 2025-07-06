@@ -1,15 +1,16 @@
 package java_basictoadvance_java10_17;
 
 //Only B&C able to inherit A
-final class A{
+//to perimt do like this
+sealed class A permits B,C{
 	
 }
 
-class B extends A{
+final class B extends A{
 	
 }
 
-class C{
+final class C extends A{
 	
 }
 
