@@ -2,7 +2,7 @@ package java_basictoadvance_java10_17;
 
 //Only B&C able to inherit A
 //to perimt do like this
-sealed class A permits B,C{
+sealed class A extends Thread implements Cloneable permits B,C{
 	
 }
 
@@ -15,6 +15,14 @@ final class C extends A{ //---> no one can extend this
 }
 
 class D extends B{ //---> Can access to other class
+	
+}
+
+sealed interface X permits Y{
+	
+}
+
+interface Y extends X{
 	
 }
 
