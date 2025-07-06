@@ -6,7 +6,7 @@ sealed class A permits B,C{
 	
 }
 
-sealed class B extends A permits D{
+non-sealed class B extends A { //---> Can access to other class
 	
 }
 
@@ -14,7 +14,7 @@ final class C extends A{
 	
 }
 
-final /*non-sealed*/ class D extends B{
+final /*non-sealed*/ class D extends B{ //---> Can access to other class
 	
 }
 
