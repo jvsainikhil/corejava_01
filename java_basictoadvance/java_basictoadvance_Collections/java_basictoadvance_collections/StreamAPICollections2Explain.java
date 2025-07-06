@@ -9,9 +9,8 @@ public class StreamAPICollections2Explain {
 	public static void main(String[] args) {
 		List<Integer> nums = Arrays.asList(4, 8, 5, 1);
 		
-		Predicate<Integer> p= n -> {
-				return n%2==0;
-		};
+		Predicate<Integer> p= n -> n%2==0;
+		;
 		
 		int result = nums.stream()
 				.filter(p/* n -> n % 2 == 0 */)//---> 01
