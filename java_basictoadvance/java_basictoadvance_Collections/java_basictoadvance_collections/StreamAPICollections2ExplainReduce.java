@@ -10,10 +10,10 @@ public class StreamAPICollections2ExplainReduce {
 		List<Integer> nums = Arrays.asList(4, 8, 5, 1);
 		
 				
-		Stream<Integer> sortvalues = nums.stream()
+		Stream<Integer> sortvalues = nums.parallelStream()
 				.filter(n -> n % 2 == 0) 
 				.sorted();
-		sortvalues.forEach(n-> System.err.println(n));
+		sortvalues.forEach(n-> System.out.println(n));
 				//.map(n -> n * 2)
 				//if we want to add value 0+4,
 				//carry element
