@@ -10,11 +10,11 @@ non-sealed class B extends A { //---> Can access to other class
 	
 }
 
-final class C extends A{
+final class C extends A{ //---> no one can extend this
 	
 }
 
-final /*non-sealed*/ class D extends B{ //---> Can access to other class
+class D extends B{ //---> Can access to other class
 	
 }
 
