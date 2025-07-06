@@ -12,9 +12,11 @@ public class StreamAPICollections2 {
 		//once we use it we cannot use it again this is an interface
 		//all operations can be performed here s1
 		Stream<Integer> s1 =nums.stream(); //we will get all the values on s1
-
-		s1.forEach(n->System.out.println(n));
-		s1.forEach(n->System.out.println(n));
+		Stream<Integer> s2 = s1.filter(n -> n%2==0);
+		Stream<Integer> s3 = s2.map(n -> n*2);
+		s3.forEach(n -> System.out.println(n));
+		
+		
 		/*
 		we can use only once
 		output:
