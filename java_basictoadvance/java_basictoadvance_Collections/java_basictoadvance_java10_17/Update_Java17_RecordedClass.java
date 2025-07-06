@@ -33,7 +33,7 @@ public class Update_Java17_RecordedClass {
 		//if we have come data for store purpose only 
 		DataHolders a1= new DataHolders(1, "Nikhil");
 		// --> 0, We want to get the values
-		System.out.println(a1);
+		System.out.println(a1); //output: DataHolders [id=1, name=Nikhil]
 		//Normal way -> bit we want all the values so for this --> 0
 		/*var a = a1.getName();
 		var b = a1.getId();
