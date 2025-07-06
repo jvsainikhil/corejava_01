@@ -15,7 +15,8 @@ public class StreamAPICollections2 {
 
 		s1.forEach(n->System.out.println(n));
 		s1.forEach(n->System.out.println(n));
-		/*we can use only once
+		/*
+		we can use only once
 		output:
 			4
 			8
