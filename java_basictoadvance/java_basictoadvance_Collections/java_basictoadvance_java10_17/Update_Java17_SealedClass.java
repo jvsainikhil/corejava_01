@@ -18,12 +18,11 @@ class D extends B{ //---> Can access to other class
 	
 }
 
-sealed interface X permits Y{
+sealed interface X permits Y{ //-->01
 	
 }
 
-interface Y extends X{
-	
+non-sealed interface Y extends X{ //-->01
 }
 
 public class Update_Java17_SealedClass {
