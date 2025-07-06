@@ -14,7 +14,7 @@ final class C extends A{
 	
 }
 
-class D{
+class D extends A{
 	
 }
 
