@@ -14,7 +14,10 @@ public class StreamAPICollections2 {
 		Stream<Integer> s1 =nums.stream(); //we will get all the values on s1
 		Stream<Integer> s2 = s1.filter(n -> n%2==0);
 		Stream<Integer> s3 = s2.map(n -> n*2);
-		s3.forEach(n -> System.out.println(n));
+		//last output
+		int result=s3.reduce(0,(c,e)-> c+e);
+		System.out.println(result);
+		//s3.forEach(n -> System.out.println(n));
 		
 		
 		/*
