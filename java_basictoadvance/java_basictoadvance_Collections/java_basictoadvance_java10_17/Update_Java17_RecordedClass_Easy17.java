@@ -54,16 +54,14 @@ record DataHolder(int id, String name) {
 	//not recomended ----------> _01_Changing behaviour 
 //	public DataHolder() {
 //		this(0," "); // called another constructor
-//		
+//		#
 //	}
 	//Canonical constructor - same parameters as 
-	public DataHolder(int id, String name) {
+	//Compact Canonical Constructor
+	public DataHolder {
 		//pre check If we want to throw exception record DataHolder(int id, String name)
 		if(id ==0)
 			throw new IllegalArgumentException("Id cannot be zero");
-		
-		this.id = id;
-		this.name = name;
 	}
 }
 
