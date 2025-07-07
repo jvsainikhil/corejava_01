@@ -52,11 +52,14 @@ import java.util.Objects;
 // we got all the object and it is true Simple One with out doing the top methods 
 record DataHolder(int id, String name) {
 	//not recomended ----------> _01_Changing behaviour 
-	public DataHolder() {
-		this(0," "); // called another constructor
-		
-	}
+//	public DataHolder() {
+//		this(0," "); // called another constructor
+//		
+//	}
 	public DataHolder(int id, String name) {
+		//pre check If we want to throw exception
+		if(id ==0)
+			throw new IllegalArgumentException("Id cannot be zero");
 		this.id = id;
 		this.name = name;
 	}
@@ -67,12 +70,13 @@ public class Update_Java17_RecordedClass_Easy17 {
 	public static void main(String[] args) {
 		//Data Carrier Class
 		//if we have come data for store purpose only 
-		DataHolder a1= new DataHolder(1, "Nikhil");
+		DataHolder a1= new DataHolder(0, "Nikhil");
 		DataHolder a2= new DataHolder(1, "Nikhil");
+		//if some once sends 0
 		//To change the behaviour of constructor --> default constructor
-		DataHolder a3= new DataHolder(); //----------> _01_Changing behaviour 
+		//DataHolder a3= new DataHolder(); //----------> _01_Changing behaviour 
 		// we cannot change the data
-		System.out.println(a3);
+		//System.out.println(a3);
 		System.out.println(a1.equals(a2)); 
 		System.out.println(a1);
 	}
