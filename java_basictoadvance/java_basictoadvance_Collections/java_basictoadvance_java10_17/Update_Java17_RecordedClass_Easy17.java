@@ -56,10 +56,12 @@ record DataHolder(int id, String name) {
 //		this(0," "); // called another constructor
 //		
 //	}
+	//Canoninical constructor
 	public DataHolder(int id, String name) {
 		//pre check If we want to throw exception
 		if(id ==0)
 			throw new IllegalArgumentException("Id cannot be zero");
+		
 		this.id = id;
 		this.name = name;
 	}
