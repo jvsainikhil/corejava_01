@@ -50,7 +50,7 @@ import java.util.Objects;
 
 // we have no default constructor
 // we got all the object and it is true Simple One with out doing the top methods 
-record DataHolder(int id, String name) {
+record DataHolder(int id, String name)  { // all these are private and final by default, it is a class this class connor another class, but we can implement interface and we can write methods and static variable
 	//not recomended ----------> _01_Changing behaviour 
 //	public DataHolder() {
 //		this(0," "); // called another constructor
@@ -58,11 +58,18 @@ record DataHolder(int id, String name) {
 //	}
 	//Canonical constructor - same parameters as 
 	//Compact Canonical Constructor
+	static int num;
+	//int age; //---> do on to top
 	public DataHolder {
 		//pre check If we want to throw exception record DataHolder(int id, String name)
 		if(id ==0)
 			throw new IllegalArgumentException("Id cannot be zero");
 	}
+	
+	public void show() {
+		
+	}
+	
 }
 
 public class Update_Java17_RecordedClass_Easy17 {
@@ -70,8 +77,11 @@ public class Update_Java17_RecordedClass_Easy17 {
 	public static void main(String[] args) {
 		//Data Carrier Class
 		//if we have come data for store purpose only 
-		DataHolder a1= new DataHolder(0, "Nikhil");
-		DataHolder a2= new DataHolder(1, "Nikhil");
+		DataHolder a1= new DataHolder(1, "Nikhil");
+		DataHolder a2= new DataHolder(2, "Nikhil");
+		//To fetch value or data 
+		System.out.println(a1.name());
+		
 		//if some once sends 0
 		//To change the behaviour of constructor --> default constructor
 		//DataHolder a3= new DataHolder(); //----------> _01_Changing behaviour 
