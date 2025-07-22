@@ -47,19 +47,32 @@ class nikhil {
 //}
 
 //✅ Define functional interface at top level OR make it accessible
-interface Addable {
- int add();
+interface AddableAdd {
+	int add();
+}
+interface AddableSub {
+	int sub();
 }
 
 public class BasicsPratice {
- public static void main(String[] args) {
-     nikhil a = new nikhil();
-     System.out.println("Muscles: " + a.getMusels());
+	public static void main(String[] args) {
+		nikhil a = new nikhil();
+		System.out.println("Muscles: " + a.getMusels());
 
-     // ✅ Lambda expression assigned to Addable
-     Addable b = () -> a.getHeartBeat() + a.getRunningSpeed();
+		// ✅ Lambda expression assigned to Addable
+		AddableAdd b = () -> a.getHeartBeat() + a.getRunningSpeed();
+		AddableSub c = () -> a.getHeartBeat() - a.getRunningSpeed();
 
-     // ✅ Call the method and print result
-     System.out.println("Sum using lambda: " + b.add());
- }
+		// ✅ Call the method and print result
+		System.out.println("Sum using lambda: " + b.add());
+		System.out.println("Sum using lambda: " + c.sub());
+	}
 }
+
+
+
+
+
+
+
+
