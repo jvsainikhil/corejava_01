@@ -6,7 +6,7 @@ class MobilePhone {
     int price;           // Instance variable
     static String name;  // Static variable shared by all objects
 
-    // Static block
+    // Static block+
     static {
         name = "Phone";
         System.out.println("Static Block: name=" + name);

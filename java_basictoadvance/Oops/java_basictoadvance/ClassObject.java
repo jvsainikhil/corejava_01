@@ -14,7 +14,7 @@ class adf{
 		return r;
 	}
 }
-
+ 
 class Nikhil {
 	// Method inside the class
 	void sayHello() {

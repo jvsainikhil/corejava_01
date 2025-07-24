@@ -10,6 +10,7 @@
 	<classpathentry kind="src" path="java_basictoadvance_advance"/>
 	<classpathentry kind="src" path="java_basictoadvance_Collections"/>
 	<classpathentry kind="src" path="java_DSA"/>
+	<classpathentry kind="src" path="java_basictoadvance_Main_pratice"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
