@@ -1,7 +1,5 @@
 package java_basics_operators;
 
-import java.text.NumberFormat;
-import java.util.Locale;
 
 public class TernaryOperator {
 	public static void main(String args[]) {
